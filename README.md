@@ -7,3 +7,30 @@ module.exports = {
     ? './' : '/'
 }
 ```
+### 2.忽略语法检查,vue.config.js+
+```
+lintOnSave: false,
+    devServer: {
+        overlay: {
+            warning: false,
+            errors: false
+        }
+
+    }
+```
+### 3.解决npm run build 报错
+执行
+```
+cnpm install --global vue-cli
+```
+
+```
+//报错信息
+error code ELIFECYCLE
+21 error errno 1
+22 error cli@0.1.0 build: `vue-cli-service build`
+22 error Exit status 1
+23 error Failed at the cli@0.1.0 build script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+```
+
