@@ -33,4 +33,10 @@ error code ELIFECYCLE
 23 error Failed at the cli@0.1.0 build script.
 23 error This is probably not a problem with npm. There is likely additional logging output above.
 ```
-
+### 4.安装淘宝镜像
+```
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g nrm
+nrm ls
+nrm use taobao
+```
