@@ -40,3 +40,25 @@ npm install -g nrm
 nrm ls
 nrm use taobao
 ```
+### 5.vuecli引入第三方图标
+main.js里面导入
+```
+import './assets/iconfont/iconfont.js
+```
+App.vue加上style
+```
+.icon {
+   width: 1em; height: 1em;
+   vertical-align: -0.15em;
+   fill: currentColor;
+   overflow: hidden;
+}
+```
+引用
+```
+<svg class="icon myIconStyle" aria-hidden="true">
+　　<use :xlink:href="'#' + dbIcon[item.type]"></use>
+</svg>
+```
+
+
